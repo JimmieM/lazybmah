@@ -1,0 +1,4 @@
+## Interface: 100107
+## Title: LazyBMAH
+## Notes: WoW Addon to notify you by playing a soundfile whenever you've been outbid on the Black Market Auction House.
+lazyBMAH.lua
