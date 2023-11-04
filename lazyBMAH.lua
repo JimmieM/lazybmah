@@ -1,6 +1,5 @@
 local frame = CreateFrame("Frame")
 
-
 local function displayWarningFrameText(arg1)
     local warningFrame = CreateFrame("Frame", nil, UIParent)
     warningFrame:SetSize(400, 100)
@@ -17,7 +16,7 @@ local function displayWarningFrameText(arg1)
     C_Timer.After(3, function() warningFrame:Hide() end)
 end
 
-local function OnEvent(self, event, arg1)
+local function OnEvent(_, event, arg1)
     if event == "CHAT_MSG_SYSTEM" then
         if string.find(arg1, "You have been outbid on") then
             PlaySoundFile("Interface\\AddOns\\lazyBMAH\\sound\\outbid.mp3") 
