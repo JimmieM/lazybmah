@@ -22,7 +22,11 @@ local function OnEvent(_, event, arg1)
             PlaySoundFile("Interface\\AddOns\\lazyBMAH\\sound\\outbid.mp3") 
             displayWarningFrameText(arg1)
         end
-    end
+        if string.find(arg1, "You have won an auction for") then
+            PlaySoundFile("Interface\\AddOns\\lazyBMAH\\sound\\auction_won.mp3") 
+            displayWarningFrameText(arg1)
+        end
+    end 
 end
 
 frame:RegisterEvent("CHAT_MSG_SYSTEM")
